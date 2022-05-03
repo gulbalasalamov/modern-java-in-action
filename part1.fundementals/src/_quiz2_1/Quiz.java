@@ -1,10 +1,9 @@
-package _quiz;
+package _quiz2_1;
 
 import model.Apple;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Predicate;
 
 import static model.Colour.GREEN;
 import static model.Colour.RED;

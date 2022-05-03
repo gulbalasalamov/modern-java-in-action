@@ -1,4 +1,4 @@
-package _quiz;
+package _quiz2_1;
 
 import model.Apple;
 
