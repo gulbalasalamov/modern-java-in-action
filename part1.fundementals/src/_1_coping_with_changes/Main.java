@@ -1,11 +1,14 @@
-package passing_code_with_behaviour_parameterization;
+package _1_coping_with_changes;
+
+import model.Apple;
+import model.Colour;
 
 import java.util.ArrayList;
 
 import java.util.List;
 
-import static passing_code_with_behaviour_parameterization.Colour.GREEN;
-import static passing_code_with_behaviour_parameterization.Colour.RED;
+import static model.Colour.GREEN;
+import static model.Colour.RED;
 
 public class Main {
     public static void main(String[] args) {

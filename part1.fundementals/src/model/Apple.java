@@ -1,4 +1,4 @@
-package passing_code_with_behaviour_parameterization;
+package model;
 
 public class Apple {
     Colour colour;
