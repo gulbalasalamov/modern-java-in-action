@@ -1,7 +1,6 @@
-package _2_behaviour_parameterization;
+package _2_2_behaviour_parameterization;
 
 import model.Apple;
-import model.Colour;
 
 import static model.Colour.GREEN;
 

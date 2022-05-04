@@ -1,7 +1,6 @@
-package _3_tackling_verbosity;
+package _2_3_tackling_verbosity;
 
 import model.Apple;
-import model.Colour;
 
 import java.util.ArrayList;
 import java.util.Arrays;

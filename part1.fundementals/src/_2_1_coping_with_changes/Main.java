@@ -1,4 +1,4 @@
-package _1_coping_with_changes;
+package _2_1_coping_with_changes;
 
 import model.Apple;
 import model.Colour;

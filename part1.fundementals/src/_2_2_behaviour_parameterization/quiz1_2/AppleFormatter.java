@@ -1,4 +1,4 @@
-package _quiz2_1;
+package _2_2_behaviour_parameterization.quiz1_2;
 
 import model.Apple;
 

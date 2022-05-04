@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/modern-java-in-action.iml" filepath="$PROJECT_DIR$/modern-java-in-action.iml" />
       <module fileurl="file://$PROJECT_DIR$/part1.fundementals/part1.fundementals.iml" filepath="$PROJECT_DIR$/part1.fundementals/part1.fundementals.iml" />
+      <module fileurl="file://$PROJECT_DIR$/part1.fundementals/part1.fundementals.2passing_code_with_behaviour_parameterization.iml" filepath="$PROJECT_DIR$/part1.fundementals/part1.fundementals.2passing_code_with_behaviour_parameterization.iml" />
     </modules>
   </component>
 </project>
