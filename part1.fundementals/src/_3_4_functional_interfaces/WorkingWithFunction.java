@@ -9,7 +9,7 @@ import java.util.function.Function;
  * create a method map to transform a list of Strings into a list
  * of Integers containing the length of each String
  */
-public class FunctionExample {
+public class WorkingWithFunction {
     static <T, R> List<R> map(List<T> list, Function<T,R> f) {
         List<R> result = new ArrayList<>();
         for (T t: list) {

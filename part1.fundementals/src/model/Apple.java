@@ -4,6 +4,8 @@ public class Apple {
     Colour colour;
     int weight;
 
+    public Apple(){}
+
     public Apple(Colour colour, int weight) {
         this.colour = colour;
         this.weight = weight;
