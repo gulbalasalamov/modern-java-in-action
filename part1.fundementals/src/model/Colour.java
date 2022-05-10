@@ -1,7 +1,7 @@
 package model;
 
 public enum Colour {
-    GREEN,RED;
+    GREEN,RED,YELLOW;
 
     @Override
     public String toString() {
