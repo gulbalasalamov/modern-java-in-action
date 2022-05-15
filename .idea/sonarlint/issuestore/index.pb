@@ -5,8 +5,6 @@ Wpart1.fundementals/part1.fundementals.2passing_code_with_behaviour_parameteriza
 Rpart1.fundementals/src/_2_2_behaviour_parameterization/quiz1_2/AppleFormatter.java,3\1\31e1a3fd6b9eb91dbb0e5c69a0b4ae0d5a6a6884
 Ž
 ^part1.fundementals/src/_2_2_behaviour_parameterization/quiz1_2/AppleHeavyOrLightPredicate.java,b\f\bf21cf3271935a57a9e849a0402e5290d28edaf5
-i
-9part1.fundementals/src/_2_1_coping_with_changes/Main.java,7\e\7efb9b25e17c23ba4d71b89c8b283ab45ea52c6a
 h
 8part1.fundementals/src/_2_3_tackling_verbosity/Main.java,d\9\d9cd2164ad6b3f7995de3bfc2aa0e691f21534e3
 x
@@ -25,13 +23,5 @@ p
 @part1.fundementals/src/_2_2_behaviour_parameterization/Main.java,a\8\a8dd5b5352f08a73e28fcf90f2aca66f7049b56c
 X
 (part1.fundementals/src/model/Colour.java,a\f\af25710a2b0e21f5db5e1ff711cc3a7483af3094
-z
-Jpart1.fundementals/src/_3_4_functional_interfaces/WorkingWithConsumer.java,3\2\326a23e63b7d4ca3be486fb762a928cc711420da
 W
 'part1.fundementals/src/model/Apple.java,c\0\c045a224f6b1da7c06d924520142f4ce786e087e
-y
-Ipart1.fundementals/src/_3_6_method_references/MethodReferenceExample.java,7\3\739db67e8a45ca1afa622f12ebbd60e0e256800d
-‚
-Rpart1.fundementals/src/_3_6_method_references/ConstructorWithoutInstantiation.java,f\8\f82230550de0c6a4aacbb197764f15daadc85991
-x
-Hpart1.fundementals/src/_3_6_method_references/ConstructorReferences.java,3\b\3b76fb72a80bf6ab2d95257366607daa9b1391ae
