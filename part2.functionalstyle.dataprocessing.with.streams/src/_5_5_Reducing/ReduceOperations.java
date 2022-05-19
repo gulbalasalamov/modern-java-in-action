@@ -3,6 +3,9 @@ package _5_5_Reducing;
 import java.util.Arrays;
 import java.util.stream.IntStream;
 
+/**
+ * sum of stream, factorial, max of stream, min of stream
+ */
 public class ReduceOperations {
     public static void main(String[] args) {
         int n = 5;
