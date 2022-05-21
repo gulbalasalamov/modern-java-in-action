@@ -3,10 +3,7 @@ package _5_6_practices;
 import model.Trader;
 import model.Transaction;
 
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 
 import static java.util.Comparator.comparing;
@@ -37,16 +34,28 @@ public class TradersExecutingTransactionsExample {
         tradersCities.forEach(System.out::println);
         System.out.println(tradersCities);
 
-        var tradersFromCambridgeSortedByName = getTradersFromCity(transactions,"Cambridge");
+        var tradersFromCambridgeSortedByName = getTradersFromCity(transactions, "Cambridge");
         tradersFromCambridgeSortedByName.forEach(System.out::println);
 
         var allTradersNameSortedAlphabetically = getAllTradersNameSortedAlphabetically(transactions);
-        allTradersNameSortedAlphabetically.forEach(System.out::println);
+        System.out.println(allTradersNameSortedAlphabetically);
 
+        var milanBased = getTradersFromCity(transactions, "cambridge");
+        System.out.println(milanBased);
+
+        var anyTrader = areThereTradersBasedInCity(transactions, "milan");
+        System.out.println(anyTrader);
+
+        var transactionValues = getTransactionValuesFromTraders(transactions, "cambridge");
+        transactionValues.forEach(System.out::println);
+
+        var highestValueOfAllTransactions = getHighestValueOfAllTransactions(transactions);
+        System.out.println(highestValueOfAllTransactions);
     }
 
     /**
      * Find all transactions in the year 2011 and sort them by value (small to high)
+     *
      * @param transactions
      * @param year
      * @return
@@ -60,6 +69,7 @@ public class TradersExecutingTransactionsExample {
 
     /**
      * What are all the unique cities where traders work?
+     *
      * @param transa
      * @return
      */
@@ -71,6 +81,7 @@ public class TradersExecutingTransactionsExample {
 
     /**
      * Find all traders from Cambridge and sort them by name
+     *
      * @param transactions
      * @param city
      * @return
@@ -85,19 +96,53 @@ public class TradersExecutingTransactionsExample {
     }
 
     /**
-     * Returns a list of string of all traders' names sorted alphabetically
+     * Returns a string of all traders' names sorted alphabetically
+     *
      * @param transactions
      * @return
      */
-    static List<String> getAllTradersNameSortedAlphabetically(List<Transaction> transactions) {
+    static String getAllTradersNameSortedAlphabetically(List<Transaction> transactions) {
         return transactions.stream()
                 .map(transaction -> transaction.getTrader().getName())
                 .distinct()
                 .sorted()
+                .collect(Collectors.joining());
+        //.collect(Collectors.toList());
+        //.reduce ("", (x1,x2) -> x1+x2) combines the names one by one to form a String that conatenates all the names
+        // This is inefficient as all String are repeatedly concatenated, creating new String object at each iteration.
+        //collect(joining()); better as it internally makes use of StringBuilder
+    }
+
+    /**
+     * Return boolean if there is/are trader(s) based in given city
+     *
+     * @param transactions
+     * @param city
+     * @return
+     */
+    static boolean areThereTradersBasedInCity(List<Transaction> transactions, String city) {
+        return transactions.stream()
+                .anyMatch(transaction -> transaction.getTrader().getCity().equalsIgnoreCase(city));
+    }
+
+    /**
+     * Prints all transactions' values from the traders living in given city
+     *
+     * @param transactions
+     * @param city
+     * @return
+     */
+    static List<Integer> getTransactionValuesFromTraders(List<Transaction> transactions, String city) {
+        return transactions.stream()
+                .filter(transaction -> transaction.getTrader().getCity().equalsIgnoreCase(city))
+                .map(transaction -> transaction.getValue())
                 .collect(Collectors.toList());
-                //.reduce ("", (x1,x2) -> x1+x2) combines the names one by one to form a String that conatenates all the names
-                // This is inefficient as all String are repeatedly concatenated, creating new String object at each iteration.
-                //collect(joining()); better as it internally makes use of StringBuilder
+    }
+
+    static int getHighestValueOfAllTransactions(List<Transaction> transactions) {
+        return transactions.stream()
+                .map(transaction -> transaction.getValue())
+                .reduce(Integer.MIN_VALUE, (a,b) -> Integer.max(a,b));
     }
 
 }

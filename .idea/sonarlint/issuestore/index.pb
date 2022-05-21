@@ -65,3 +65,13 @@ kpart2.functionalstyle.dataprocessing.with.streams/src/_5_1_working_with_streams
 `part2.functionalstyle.dataprocessing.with.streams/src/_5_1_working_with_streams/SkipElement.java,9\6\96285a389886f34fc49e4bb2f8148720b4b71426
 ≠
 }part2.functionalstyle.dataprocessing.with.streams/src/_4_2_getting_started_with_streams/StreamsFIlterMapSortLimitCollect.java,5\e\5e1ad6867c61812ef301972e9210b065b6404929
+|
+Lpart2.functionalstyle.dataprocessing.with.streams/src/_5_3_mapping/Test.java,3\5\35999308d6f6820882d8712ff8e9924e309b3980
+ç
+]part2.functionalstyle.dataprocessing.with.streams/src/_5_4_finding_and_matching/AnyMatch.java,b\c\bc24a1320819ce86f1bc258353a06b7bd5720966
+å
+\part2.functionalstyle.dataprocessing.with.streams/src/_5_4_finding_and_matching/FindAny.java,f\5\f52a11ab11a938eac1a5030c6a169801201f17fa
+u
+Epart2.functionalstyle.dataprocessing.with.streams/src/model/Dish.java,4\8\48ac79cb2feb0b073ab7c7294895bd1d98969641
+â
+Ypart2.functionalstyle.dataprocessing.with.streams/src/_5_5_Reducing/ReduceOperations.java,e\6\e6f16593c23550ad67585383f071d72da4cc270f
