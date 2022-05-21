@@ -2,6 +2,8 @@ package _5_7_numeric_streams;
 
 import model.Dish;
 
+import java.util.OptionalInt;
+
 public class NumericStreamTest {
     public static void main(String[] args) {
         //mapToInt, mapToDouble, mapToLong most common specialized version
@@ -15,6 +17,10 @@ public class NumericStreamTest {
 
         System.out.println(v);
         v2.ifPresent(System.out::println);
-        System.out.println();
+        v2.orElse(1); // Explicitly define a default value if there is no max
+
+
     }
+
+
 }
