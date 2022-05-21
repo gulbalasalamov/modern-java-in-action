@@ -51,6 +51,9 @@ public class TradersExecutingTransactionsExample {
 
         var highestValueOfAllTransactions = getHighestValueOfAllTransactions(transactions);
         System.out.println(highestValueOfAllTransactions);
+
+        var smallestTransactionValue = getSmallestTransaction(transactions);
+        smallestTransactionValue.ifPresent(System.out::println);
     }
 
     /**
@@ -142,7 +145,14 @@ public class TradersExecutingTransactionsExample {
     static int getHighestValueOfAllTransactions(List<Transaction> transactions) {
         return transactions.stream()
                 .map(transaction -> transaction.getValue())
-                .reduce(Integer.MIN_VALUE, (a,b) -> Integer.max(a,b));
+                .reduce(Integer.MIN_VALUE, (a, b) -> Integer.max(a, b));
+    }
+
+    static Optional<Transaction> getSmallestTransaction(List<Transaction> transactions) {
+//        return transactions.stream()
+//                .reduce((t1,t2) -> t1.getValue() < t2.getValue() ? t1 : t2);
+        return transactions.stream()
+                .min(Comparator.comparing(Transaction::getValue));
     }
 
 }
