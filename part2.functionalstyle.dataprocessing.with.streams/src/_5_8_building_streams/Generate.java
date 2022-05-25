@@ -7,5 +7,6 @@ public class Generate {
         Stream.generate(Math::random)
                 .limit(5)
                 .forEach(System.out::println);
+        System.out.println("Hehehe :)");
     }
 }
