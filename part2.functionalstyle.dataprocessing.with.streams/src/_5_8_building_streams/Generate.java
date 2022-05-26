@@ -8,5 +8,6 @@ public class Generate {
                 .limit(5)
                 .forEach(System.out::println);
         System.out.println("Hehehe :)");
+        //some change
     }
 }
