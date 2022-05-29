@@ -1,4 +1,4 @@
-package _6_collecting_data_with_streams;
+package _6_2_reducing_and_summarizing;
 
 import model.Dish;
 
@@ -6,10 +6,8 @@ import static java.util.stream.Collectors.counting;
 
 import java.util.Comparator;
 import java.util.Optional;
-import java.util.stream.Collector;
-import java.util.stream.Collectors;
 
-public class ReducingAndSummarizing {
+public class FindingMaxAndMinInStream {
     public static void main(String[] args) {
         var howManyDishes = Dish.menu.stream()
                 .collect(counting());
@@ -29,7 +27,7 @@ public class ReducingAndSummarizing {
     static void findMaxAndMinCaloriesDish() {
         var dishCaloriesComparator =
                 Comparator.comparingInt(Dish::getCalories);
-
+        //Why optional? Because what if menu empty!
         Optional<Dish> mostCalorieDish =
                 Dish.menu.stream().max(dishCaloriesComparator);
 
