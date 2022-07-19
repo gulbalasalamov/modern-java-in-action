@@ -21,7 +21,7 @@ public class FindAny {
                         .filter(x -> Math.pow(x, 2) % 3 == 0)
                         .findFirst();
         firstSqrDivisibleByThree.ifPresent(System.out::println);
-        System.out.println(firstSqrDivisibleByThree.get());
+        System.out.println(firstSqrDivisibleByThree.get());//
 
     }
 }
